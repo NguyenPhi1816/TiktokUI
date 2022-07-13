@@ -6,6 +6,8 @@
 
     width: 100%;
     height: var(--default-layout-header-height);
+    padding-left: 20px;
+    padding-right: 24px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
     display: flex;
     justify-content: center;
@@ -96,6 +98,14 @@
     }
 }
 
-.upload {
-    margin-right: 8px;
+.light-grey {
+    color: rgba(22, 24, 35, 0.75) !important;
+}
+
+.more-btn {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    font-size: 2rem;
+    margin-left: 1.6rem;
 }
