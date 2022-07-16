@@ -15,12 +15,38 @@
 
 .menu-item {
     width: 100% !important;
-    height: 48px !important;
+    line-height: 1.8rem !important;
     justify-content: flex-start !important;
     border-radius: 0 !important;
-    font-weight: 600 !important;
+    font-weight: 500 !important;
+    padding: 11px 16px;
+
+    &.saparate {
+        border-top: 1px solid rgba(22, 24, 35, 0.12);
+    }
 
     &:hover {
         background-color: rgba(22, 24, 35, 0.03);
     }
+}
+
+//menu header
+.header {
+    position: relative;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -8px;
+}
+
+.back-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    margin-left: 28px;
+    font-weight: 200;
+    background-color: transparent;
+    cursor: pointer;
 }
