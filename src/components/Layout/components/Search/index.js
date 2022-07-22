@@ -42,8 +42,8 @@ function Search() {
     }, [debounced]);
 
     const handleChange = (e) => {
-        if (!e.target.value.trim()) setSearchValue('');
-        else setSearchValue(e.target.value);
+        const searchValue = e.target.value;
+        if (!searchValue.startsWith(' ')) setSearchValue(searchValue);
     };
 
     const handleClear = () => {
@@ -96,7 +96,10 @@ function Search() {
                     />
                 )}
                 <HeadlessTippy content="Tìm kiếm">
-                    <button className={cx('search-btn')}>
+                    <button
+                        className={cx('search-btn')}
+                        onMouseDown={(e) => e.preventDefault()}
+                    >
                         <SearchIcon />
                     </button>
                 </HeadlessTippy>
