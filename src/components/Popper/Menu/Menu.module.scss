@@ -11,8 +11,11 @@
     padding-bottom: 8px;
 }
 
-//menu item
+.menu-body {
+    overflow-y: auto;
+}
 
+//menu item
 .menu-item {
     width: 100% !important;
     line-height: 1.8rem !important;
@@ -33,6 +36,7 @@
 //menu header
 .header {
     position: relative;
+    flex-shrink: 0;
     height: 50px;
     display: flex;
     justify-content: center;
