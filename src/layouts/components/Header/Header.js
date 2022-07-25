@@ -31,18 +31,21 @@ const MENU_ITEM = [
     {
         icon: <LanguageIcon />,
         title: 'English',
-        children: [
-            {
-                type: 'language',
-                code: 'en',
-                title: 'English',
-            },
-            {
-                type: 'language',
-                code: 'vi',
-                title: 'Tiếng Việt',
-            },
-        ],
+        children: {
+            title: 'Language',
+            data: [
+                {
+                    type: 'language',
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    type: 'language',
+                    code: 'vi',
+                    title: 'Tiếng Việt',
+                },
+            ],
+        },
     },
     {
         icon: <FeedbackIcon />,
