@@ -9,7 +9,7 @@ import styles from './Search.module.scss';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import AccountItem from '~/components/AccountItem';
 import { SearchIcon } from '~/components/Icons';
-import * as searchServices from '~/apiServices/searchService';
+import * as searchService from '~/services/searchService';
 
 const cx = classNames.bind(styles);
 
@@ -32,7 +32,7 @@ function Search() {
         const fetchApi = async () => {
             setLoading(true);
 
-            const result = await searchServices.search(debounced, 'less');
+            const result = await searchService.search(debounced, 'less');
             setSearchResult(result);
 
             setLoading(false);
